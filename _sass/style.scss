@@ -1,0 +1,42 @@
+@import "normalize";
+
+html, body {
+  min-width: 300px;
+  min-height: 480px;
+}
+
+body {
+	font-family: 'Noticia Text', serif;
+}
+
+li {
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 3.5em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+header {
+	text-align: center;
+}
+
+main {
+	margin: 0 auto;
+  max-width: 1000px;
+}
+
+section {
+	background-color: #EEE;
+	border: 1px solid #DDD;
+	margin: 0 auto;
+	width: 640px;
+	height: auto;
+	display: block;
+	padding: 5px 10px;
+}

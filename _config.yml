@@ -1,0 +1,11 @@
+title: Node MVC Frameworks
+subtitle: A collection of Node.js MVC Frameworks
+author: Caio Ribeiro Pereira
+timezone: America/Sao_Paulo
+
+exclude: ["README.md", ".gitignore",".rvmrc"]
+pygments: true
+permalink: /:title
+url: http://caio-ribeiro-pereira.github.io/node-mvc-frameworks
+baseurl: /
+lsi: false
