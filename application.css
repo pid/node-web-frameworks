@@ -171,10 +171,6 @@ html, body {
 body {
   font-family: 'Noticia Text', serif; }
 
-li {
-  list-style-type: none;
-  margin-bottom: 20px; }
-
 h1 {
   font-size: 3.5em; }
 
@@ -188,11 +184,50 @@ main {
   margin: 0 auto;
   max-width: 1000px; }
 
-section {
+.box {
   background-color: #EEE;
   border: 1px solid #DDD;
-  margin: 0 auto;
+  margin: 10px auto;
   width: 640px;
   height: auto;
-  display: block;
-  padding: 5px 10px; }
+  display: block; }
+
+.box__header {
+  height: auto;
+  border-bottom: 1px solid #DDD;
+  padding: 2.5px; }
+
+.box__header:hover,
+.box__header:focus {
+  background: #DDD;
+  cursor: pointer; }
+
+.box__header h1 {
+  font-size: 1.75em;
+  text-align: left;
+  margin-left: 20px; }
+
+.box__main {
+  padding: 5px;
+  display: none; }
+
+.box__content {
+  display: inline;
+  word-wrap: break-word; }
+
+.box__aside {
+  text-align: right; }
+
+.button {
+  font-size: 1.2em;
+  background: #fff;
+  color: #333;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #999;
+  display: inline-block;
+  text-decoration: none; }
+
+.button:hover {
+  background: #EFF; }
