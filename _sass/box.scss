@@ -2,7 +2,7 @@
 	background-color: #EEE;
 	border: 1px solid #DDD;
 	margin: 10px auto;
-	width: 640px;
+	width: 700px;
 	height: auto;
 	display: block;
 }
@@ -30,8 +30,34 @@
 }
 
 .box__content {
-	display: inline;
+	padding: 20px;
+}
+
+.box__figure {
+	width: 100%;
+	height: 160px;
+}
+
+.box__image {
+	float: left;
+	width: 220px;
+	border: 2px solid #DDD;
+	margin: 0 20px 0 -2px;
+	box-shadow: 3px 3px 5px #333;
+	-moz-box-shadow: 3px 3px 5px #333;
+	-webkit-box-shadow: 3px 3px 5px #333;
+	-ms-box-shadow: 3px 3px 5px #333;
+	-o-box-shadow: 3px 3px 5px #333;
+}
+
+.box__detail {
+	float: left;
 	word-wrap: break-word;
+	width: 380px;
+}
+
+.box__detail span {
+	display: block;
 }
 
 .box__aside {

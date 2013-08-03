@@ -1,8 +1,8 @@
 <section class="box">
 	<header class="box__header js-toggle-header">
-		<h1>Express</h1>
+		<h1>Meteor</h1>
 	</header>
-	<div class="box__main js-toggle-github" data-github="/visionmedia/express">
+	<div class="box__main js-toggle-github" data-github="/meteor/meteor">
 		{% include content.ext %}
 	</div>
 </section>
