@@ -9,3 +9,5 @@ permalink: /:title
 url: http://caio-ribeiro-pereira.github.io/node-web-frameworks
 baseurl: /
 lsi: false
+
+google_analytics: UA-42921477-1
