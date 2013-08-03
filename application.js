@@ -7,7 +7,14 @@
 
 // Application
 $(function() {
-	var GITHUB_REPOS = 'https://api.github.com/repos';
+	var GITHUB_REPOS = 'https://api.github.com/repos'
+		, STAMP_CACHE = new Date().toDateString()
+	;
+	if(!localStorage.getItem(STAMP_CACHE)) {
+		console.log("Clear cache");
+		localStorage.clear();
+		localStorage.setItem(STAMP_CACHE, "1");
+	}
 
 	$('.js-toggle-header').click(function() {
 		var main = $(this).next('.js-toggle-github');

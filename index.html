@@ -19,25 +19,36 @@
 		<link href="application.css" rel="stylesheet">
 	</head>
 	<body>
-		<header>
+		<header class="header">
 			<h1>{{ site.title }}</h1>
 			<h2>{{ site.subtitle }}</h2>
-			<nav>
-				<a href="#">Tweet</a> | <a href="#">Tweet</a> | <a href="#">Tweet</a>
-			</nav>
 		</header>
+		<nav class="social-box">
+			{% include socialbuttons.ext%}
+		</nav>
 		<main>
 			{% include express.ext %}
-			{% include meteor.ext %}
+			{% include connect.ext %}
 			{% include sails.ext %}
+			{% include meteor.ext %}
 			{% include compound.ext %}
 			{% include geddy.ext %}
 			{% include flatiron.ext %}
 			{% include locomotive.ext %}
 			{% include socketstream.ext %}
 			{% include spludo.ext %}
+			{% include genji.ext %}
 			{% include strata.ext %}
 		</main>
+		<footer class="footer">
+			<strong>
+				Copyright (c) by <a href="http://crpwebdev.com" target="_blank">Caio R. Pereira</a> 2013. Powered by <a href="http://github.com" target="_blank">Github</a> with <a href="http://jekyllrb.com" target="_blank">Jekyll</a>.
+			</strong>
+			<br>
+			<small>
+				<a href="http://nodejs.org" target="_blank">Node.js</a> is an official trademark of <a href="http://joyent.com" target="_blank">Joyent</a>. This site is not formally related to or endorsed by the official Joyent commercial project.
+			</small>
+		</footer>
 		<script src="application.js"></script>
 	</body>
 </html>

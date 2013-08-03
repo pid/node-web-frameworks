@@ -9,18 +9,21 @@ body {
 
 h1 {
 	font-size: 3.5em;
+	margin: 0; 
 }
 
 h2 {
 	font-size: 2em;
+	margin: 0;
 }
 
 span, b, strong, label {
 	color: #333;
 }
 
-header {
+.header, .footer {
 	text-align: center;
+	margin: 20px 0;
 }
 
 main {
