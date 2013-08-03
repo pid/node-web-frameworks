@@ -11,19 +11,20 @@ $(function() {
 
 	$('.js-toggle-header').click(function() {
 		var main = $(this).next('.js-toggle-github');
-		$.getJSON(GITHUB_REPOS + main.data('github'), {}, function(data) {
+		var cache = localStorage.getItem(main.data('github'));
+
+		if(cache) {
+			var data = JSON.parse(cache);
+			console.log("Cached");
 			console.log(data);
-			var content = main.find('.js-content');
-			var template = [];
-			template.push('<h4>'+ data.description +'</h4>');
-			template.push('<table><tr>');
-			template.push('<th>Forks</th>')
-			template.push('<th>Commits</th>')
-			template.push('<th>Collaborators</th>')
-			template.push('</tr>');
-			template.push('</table>')
-			content.html(template.join(''));
-			main.toggle();
-		});
+
+		} else {
+			$.getJSON(GITHUB_REPOS + main.data('github'), {}, function(data) {
+				console.log("Request");
+				console.log(data);
+				
+				localStorage.setItem(main.data('github'), JSON.stringify(data));
+			});
+		}
 	});
 });

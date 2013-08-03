@@ -1,0 +1,21 @@
+<article class="box__content js-content">
+	<h4 class="js-repo-description"></h4>
+	<table>
+		<tr>
+			<th>Author</th>
+			<th>Forks</th>
+			<th>Watchers</th>
+			<th>Commits</th>
+			<th>Collaborators</th>
+			<th>Open Issues</th>
+		</tr>
+		<tr>
+			<td class="js-repo-author"></td>
+			<td class="js-repo-forks"></td>
+			<td class="js-repo-watchers"></td>
+			<td class="js-repo-commits"></td>
+			<td class="js-repo-collaborators"></td>
+			<td class="js-repo-open-issues"></td>
+		</tr>
+	</table>
+</article>

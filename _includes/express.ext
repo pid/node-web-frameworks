@@ -3,8 +3,7 @@
 		<h1>Express</h1>
 	</header>
 	<div class="box__main js-toggle-github" data-github="/visionmedia/express">
-		<article class="box__content js-content">
-		</article>
+		{% include content.ext %}
 		<aside class="box__aside">
 			<a href="https://github.com/visionmedia/express" target="_blank" class="button">Github</a>
 			<a href="http://expressjs.com/" target="_blank" class="button">Site</a>
