@@ -1,0 +1,8 @@
+<section class="box">
+	<header class="box__header js-toggle-header">
+		<h1>Partial.js</h1>
+	</header>
+	<div class="box__main js-toggle-github" data-github="/petersirka/partial.js">
+		{% include content.ext %}
+	</div>
+</section>

@@ -1,0 +1,8 @@
+<section class="box">
+	<header class="box__header js-toggle-header">
+		<h1>Matador</h1>
+	</header>
+	<div class="box__main js-toggle-github" data-github="/obvious/matador">
+		{% include content.ext %}
+	</div>
+</section>
