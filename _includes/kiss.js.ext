@@ -1,0 +1,8 @@
+<section class="box">
+	<header class="box__header js-toggle-header">
+		<h1>Kiss.js</h1>
+	</header>
+	<div class="box__main js-toggle-github" data-github="/stanislavfeldman/kiss.js">
+		{% include content.ext %}
+	</div>
+</section>
